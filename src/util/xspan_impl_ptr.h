@@ -63,6 +63,7 @@ public:
 #endif
 
     inline ~CSelf() {}
+    void invalidate() {}
     inline CSelf() { assertInvariants(); }
 
     // constructors from pointers

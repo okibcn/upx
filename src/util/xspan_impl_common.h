@@ -95,7 +95,7 @@ forceinline pointer ensureBase() const {
 
 public:
 inline ~CSelf() {}
-void destroy() {
+void invalidate() {
     assertInvariants();
     base = ptr;
     size_in_bytes = 0;
